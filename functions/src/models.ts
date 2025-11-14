@@ -1,103 +1,292 @@
-// en functions/src/models.ts
+// functions/src/models.ts
 
-// --- Modelo para el INVENTARIO (Colección 'equipment') ---
+// ============================================================
+// MODELO DE INVENTARIO (EQUIPMENT)
+// ============================================================
 export interface Equipment {
-  id: string; // CÓDIGO IC (Clave primaria)
-  
-  identification: {
-    name: string; // NOMBRE
-    brand: string; // MARCA
-    model: string; // MODELO
-    serialNumber: string; // SERIE
-    assetCode?: string; // CÓDIGO AF (Opcional)
-    type: string; // TIPO DE EQUIPO
+  // 1. IDENTIFICACIÓN Y CLASIFICACIÓN
+  id: string;                  // ID ÚNICO DEL INVENTARIO (clave primaria)
+  codigoIC: string;            // CÓDIGO IC
+  codigoAF?: string;           // CÓDIGO AF (opcional)
+  lote?: string;               // NÚMERO DE LOTE
+
+  nombre: string;              // Nombre comercial del dispositivo
+  descripcion?: string;
+
+  tipoEquipo: string;          // Ej: Imagenología, Soporte Vital, Laboratorio
+  tipoArticulo?: string;       // Ej: Equipo, Accesorio, Refacción
+
+  clasificacionNomenclatura?: {
+    tipo: 'GMDN' | 'UMDNS' | 'OTRO';
+    code: string;
+    term: string;
   };
 
-  status: {
-    currentState: 'OPERATIVO' | 'INOPERATIVO' | 'EN_MANTENIMIENTO' | 'OBSERVADO' | 'EN_BAJA' | 'DE_BAJA';
-    condition: string; // CONDICIÓN DE INGRESO
-    systemStatus: string; // ESTADO DEL SISTEMA
+  modalidadIngreso: string;    // Compra, Donación, Leasing, Comodato
+  condicionIngreso: string;    // Nuevo, Usado, Reparado, Reacondicionado
+
+  pertenencia: 'PROPIO' | 'DONACION' | 'COMODATO' | 'LEASING';
+  propietario?: string;        // Nombre si aplica
+
+  criticidad: 'ALTO' | 'MEDIO' | 'BAJO';
+  criticidadIC?: string;       // Criticidad según IC
+
+  clasificacionRiesgo?: string; // Riesgo OMS/ISO (A/B/C o I/II/III)
+
+  // 2. DATOS TÉCNICOS DEL EQUIPO
+  marca: string;
+  modelo: string;
+  numeroSerie?: string;
+  anoFabricacion?: number;
+
+  softwareVersion?: string;
+  firmwareVersion?: string;
+
+  alimentacionElectrica?: {
+    voltaje?: string;
+    frecuencia?: string;
+    consumo?: string;
+    tipoEnchufe?: string;
   };
 
-  location: {
-    currentUPSS: string; // AREA CLINICA (UPSS)
-    areaReference: string; // REFERENCIA DE ÁREA
-    level: string; // NIVEL (Piso)
-    costCenterName: string; // NOMBRE DE CENTRO DE COSTO
-    costCenterCode: string; // CENTRO DE COSTO
-    sede: string; // SEDE
-  };
-  
-  acquisition: {
-    ownership: 'PROPIO' | 'TERCERO' | 'COMODATO'; // PERTENENCIA
-    modality: string; // MODALIDAD DE INGRESO
-    provider: string; // PROVEEDOR
-    purchaseOrder?: string; // N° DE OC
-    purchaseDate?: Date; // FECHA DE COMPRA
-    price?: {
-      amount: number; // PRECIO COMPRA
-      currency: 'USD' | 'PEN'; // TIPO DE MONEDA
-      exchangeRate?: number; // TIPO DE CAMBIO
-    };
-    sanitaryRegistry?: string; // REGISTRO SANITARIO
+  requisitosInstalacion?: {
+    gas?: boolean;
+    vacio?: boolean;
+    red?: boolean;
+    ups?: boolean;
+    otros?: string[];
   };
 
-  lifecycle: {
-    fabricationYear: number; // AÑO FABRICACIÓN
-    receptionDate: Date; // FECHA DE RECEPCION
-    warrantyStartDate: Date; // FECHA DE INICIO DE LA GARANTÍA
-    warrantyDurationYears: number; // GARANTÍA (años)
-    usefulLifeYears: number; // VIDA ÚTIL (años)
-    endOfLifeDate?: Date; // END OF LIFE
-    endOfSupportDate?: Date; // END OF SUPPORT
-    disposalDate?: Date; // FECHA DE BAJA
+  requisitosAmbientales?: {
+    temperatura?: string;
+    humedad?: string;
+    otros?: string[];
   };
 
-  risk: {
-    criticity: 'ALTO' | 'MEDIO' | 'BAJO'; // CRITICIDAD
-    criticityIC: string; // CRITICIDAD IC
+  accesorios?: {
+    name: string;
+    quantity: number;
+  }[];
+
+  fungibles?: {
+    name: string;
+    code?: string;
+  }[];
+
+  refacciones?: {
+    name: string;
+    code?: string;
+    quantity: number;
+  }[];
+
+  // 3. LOCALIZACIÓN Y ASIGNACIÓN
+  localizacion: {
+    pabellon?: string;
+    piso?: string;
+    areaClinica: string;
+    referenciaArea?: string;
+
+    centroCostoNombre: string;
+    centroCostoCodigo: string;
+
+    departamentoPropietario?: string;
+    responsableArea?: string;
+
+    sede: string;
+    red?: string; // Si el hospital pertenece a una red
   };
-  
-  // Los datos de Mantenimiento Preventivo/Correctivo irán en la colección 'workOrders'
-  // y se vincularán a este equipo por su 'id'.
-  // Las columnas P1, E1, P_MP_Feb, etc., se generarán dinámicamente con la lógica de negocio.
+
+  // 4. ESTADO FUNCIONAL Y OPERATIVO
+  estadoSistema: 
+    'OPERATIVO' | 
+    'INOPERATIVO' | 
+    'EN_MANTENIMIENTO' | 
+    'STANDBY' | 
+    'OBSOLETO' |
+    'EN_BAJA' |
+    'BAJA';
+
+  estadoOperativo?: 
+    'DISPONIBLE' | 
+    'EN_USO' | 
+    'EN_REPARACION' |
+    'RETIRADO' |
+    'FUERA_DE_SERVICIO';
+
+  nivelTecnico?: 'I' | 'II' | 'III';
+
+  endOfLife?: string;
+  endOfSupport?: string;
+
+  // 5. CICLO DE VIDA Y GARANTÍA
+  cicloVida: {
+    vidaUtilAnos?: number;
+    usoAnos?: number;
+    vidaUtilConsumida?: number; // %
+
+    fechaRecepcion?: string;
+    fechaInstalacion?: string;
+    fechaAceptacion?: string;
+    resultadoAceptacion?: string;
+
+    enGarantia?: boolean;
+    garantiaAnos?: number;
+    garantiaInicio?: string;
+    garantiaFin?: string;
+  };
+
+  // 6. INFORMACIÓN DE COMPRA
+  compra?: {
+    proveedor?: string;
+
+    moneda?: 'USD' | 'PEN';
+    precioCompra?: number; // USD
+    precioCompraLocal?: number; // PEN sin impuestos
+    tipoCambio?: number;
+
+    fechaCompra?: string;
+    numeroOC?: string;
+
+    registroSanitario?: string;
+    estadoRegistroSanitario?: 'ACTIVO' | 'VENCIDO' | 'EN_RENOVACION';
+  };
+
+  // 7. INDICADORES LIGEROS (NO HISTORIALES)
+  mantenimiento?: {
+    planMP?: string;           // Nombre del plan MP (si existe)
+    planCM?: string;           // Nombre del plan CM
+    requiereCalibracion?: boolean;
+    fechaUltimaCalibracion?: string;
+    fechaProximaCalibracion?: string;
+    resultadoUltimaCalibracion?: string;
+  };
+
+  // 8. HISTORIAL Y BAJA (NO DETALLADO)
+  historial?: {
+    recalls?: string[];
+    incidentes?: string[];
+  };
+
+  baja?: {
+    fechaBaja?: string;
+    motivo?: string;
+  };
+
+  comentarios?: string;
+
+  // 9. METADATOS
+  metadata: {
+    creadoPor: string;
+    creadoEn: string;
+    actualizadoPor?: string;
+    actualizadoEn?: string;
+  };
 }
 
-
-// --- Modelo para las OPERACIONES (Colección 'workOrders') ---
+// ============================================================
+// MODELO DE ORDEN DE TRABAJO (WORK ORDER)
+// ============================================================
 export interface WorkOrder {
-  id?: string; // El ID autogenerado por Firestore
-  equipmentId: string; // CÓDIGO IC del equipo relacionado
+  id?: string;                    // ID autogenerado (WO-xxxxx si deseas formatearlo)
+  equipmentId: string;            // Relación con inventario (ID IC)
 
+  // TIPO Y ESTADO DEL TICKET
   type: 'CORRECTIVO' | 'PREVENTIVO' | 'CALIBRACION' | 'INSPECCION' | 'DIAGNOSTICO';
-  status: 'ABIERTO' | 'ASIGNADO' | 'EN_PROCESO' | 'ESPERA_REPUESTO' | 'CERRADO' | 'CANCELADO';
-  
+  status: 
+    'ABIERTO' | 
+    'ASIGNADO' | 
+    'EN_PROCESO' | 
+    'ESPERA_REPUESTO' | 
+    'CERRADO' | 
+    'CANCELADO';
+
+  // INFORMACIÓN DE CREACIÓN DEL INCIDENTE
   creation: {
-    reportedAt: Date; // HORA DEL REPORTE
-    reportedBy: string; // QUIEN REPORTA
+    reportedAt: string;            // ISO (fecha y hora exacta)
+    reportedBy: {
+      userId: string;
+      name: string;
+      role?: string;
+    };
+
+    areaIncidente: string;         // Área donde ocurrió el problema
+    equipoAreaOrigen?: string;     // Área donde estaba asignado el equipo
+
+    description: string;
+    audioTranscription?: string;
+
+    attachments?: string[];        // Fotos / videos / evidencia
   };
 
+  // ASIGNACIÓN DEL TICKET
   assignment?: {
-    assignedTo: string; // NOMBRE DE TECNICO ASIGNADO
-    assignedAt: Date;
-  };
-  
-  execution?: {
-    startedAt: Date;
-    diagnosedBy: 'PROPIO' | 'TERCERO';
-    repairedBy: 'PROPIO' | 'TERCERO';
-    failureCause: string; // CAUSA DE FALLA (A NIVEL ING)
-    repairMethodology: string; // METODOLOGIA DE REPARACIÓN
-    sparePartsUsed?: { name: string; code: string; quantity: number }[];
+    assignedAt: string;
+    assignedTo: {
+      userId: string;
+      name: string;
+      type: 'INTERNO' | 'TERCERO';  // Técnico propio o tercero
+      company?: string;             // Si es tercero
+    };
   };
 
+  // EJECUCIÓN DEL SERVICIO
+  execution?: {
+    startedAt?: string;
+
+    diagnosedBy?: 'PROPIO' | 'TERCERO';
+    repairedBy?: 'PROPIO' | 'TERCERO';
+
+    failureCause?: string;          // Estandarizado
+    repairMethodology?: string;
+
+    sparePartsUsed?: {
+      partNumber?: string;
+      name: string;
+      quantity: number;
+    }[];
+
+    // Estado operativo durante la intervención
+    equipmentStatusDuringService?: 
+      'OPERATIVO' | 
+      'INOPERATIVO' | 
+      'EN_REPARACION' |
+      'FUERA_DE_SERVICIO';
+
+    // Tiempo usado en diagnóstico/reparación
+    workingTimeHours?: number;
+  };
+
+  // CIERRE DEL WORK ORDER
   closure?: {
-    closedAt: Date;
-    finalEquipmentStatus: Equipment['status']['currentState']; // El estado final del equipo
-    reportUrl?: string; // Link al PDF del informe en Cloud Storage
-    userSatisfaction?: number; // Calificación de 1 a 5
-    // Tiempos calculados al cerrar
-    resolutionTimeSeconds: number; // TIEMPO DE RESOLUCIÓN
-    downTimeSeconds: number; // TIEMPO DE INOPERATIVIDAD
+    closedAt: string;
+
+    finalEquipmentStatus: 
+      'OPERATIVO' | 
+      'INOPERATIVO' | 
+      'OBSOLETO' |
+      'BAJA' |
+      'EN_OBSERVACION';
+
+    fechaReingresoArea?: string;    // Volvió a su sala
+    userSatisfaction?: number;      // Calificación
+
+    resolutionTimeSeconds?: number;
+    downTimeSeconds?: number;
+
+    reportUrl?: string;             // PDF del informe técnico
+
+    signature?: {
+      signerName: string;
+      timestamp: string;
+      digitalHash: string;
+    };
+  };
+
+  // METADATOS
+  metadata: {
+    createdAt: string;
+    createdBy: string;
+    updatedAt?: string;
+    updatedBy?: string;
   };
 }
