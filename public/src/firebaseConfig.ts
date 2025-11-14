@@ -22,8 +22,8 @@ const functions = getFunctions(app);
 // Conecta a los emuladores si estamos en entorno de desarrollo
 if (window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost") {
   console.log("Conectando a los emuladores de Firebase...");
-  connectFirestoreEmulator(db, '127.0.0.1', 8080);
-  connectFunctionsEmulator(functions, '127.0.0.1', 5001);
+  connectFirestoreEmulator(db, 'localhost', 8080);
+  connectFunctionsEmulator(functions, 'localhost', 5001);
 }
 
 export { db, functions };

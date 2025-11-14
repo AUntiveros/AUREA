@@ -1,0 +1,1893 @@
+[
+  {
+    "id": "WO-00001",
+    "equipmentId": "TOM-001",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-15T03:57:40.046084Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Tomografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-15T22:57:40.046084Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-17T15:57:40.046084Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 7.3
+    },
+    "closure": {
+      "closedAt": "2025-08-19T22:57:40.046084Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 57600
+    },
+    "metadata": {
+      "createdAt": "2025-08-15T03:57:40.046084Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00002",
+    "equipmentId": "RES-001",
+    "type": "INSPECCION",
+    "status": "EN_PROCESO",
+    "creation": {
+      "reportedAt": "2025-05-23T03:57:40.046169Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Resonancia Magnética",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-05-23T12:57:40.046169Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-05-23T14:57:40.046169Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 1.8
+    },
+    "metadata": {
+      "createdAt": "2025-05-23T03:57:40.046169Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00003",
+    "equipmentId": "RES-001",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-05-22T03:57:40.046202Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Resonancia Magnética",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-05-22T12:57:40.046202Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-05-24T03:57:40.046202Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 2.7
+    },
+    "closure": {
+      "closedAt": "2025-05-24T06:57:40.046202Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 36000
+    },
+    "metadata": {
+      "createdAt": "2025-05-22T03:57:40.046202Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00004",
+    "equipmentId": "MAM-001",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-20T03:57:40.046234Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Mamografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-20T18:57:40.046234Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-21T16:57:40.046234Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 4.4
+    },
+    "closure": {
+      "closedAt": "2025-08-22T13:57:40.046234Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 144000
+    },
+    "metadata": {
+      "createdAt": "2025-08-20T03:57:40.046234Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00005",
+    "equipmentId": "MAM-001",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-09-16T03:57:40.046259Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Mamografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-09-16T10:57:40.046259Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-17T15:57:40.046259Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 2.2
+    },
+    "closure": {
+      "closedAt": "2025-09-19T12:57:40.046259Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 7200
+    },
+    "metadata": {
+      "createdAt": "2025-09-16T03:57:40.046259Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00006",
+    "equipmentId": "ANG-001",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-07-11T03:57:40.046285Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Angiografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-07-11T13:57:40.046285Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-07-13T03:57:40.046285Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 6.5
+    },
+    "closure": {
+      "closedAt": "2025-07-13T14:57:40.046285Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 64800
+    },
+    "metadata": {
+      "createdAt": "2025-07-11T03:57:40.046285Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00007",
+    "equipmentId": "ANG-001",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-24T03:57:40.046309Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Angiografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-06-24T23:57:40.046309Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-26T19:57:40.046309Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 2.0
+    },
+    "closure": {
+      "closedAt": "2025-06-30T01:57:40.046309Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 28800
+    },
+    "metadata": {
+      "createdAt": "2025-06-24T03:57:40.046309Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00008",
+    "equipmentId": "DEN-001",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-09-08T03:57:40.046334Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Densitometría Ósea",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-09-08T11:57:40.046334Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-10T05:57:40.046334Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 7.4
+    },
+    "closure": {
+      "closedAt": "2025-09-14T02:57:40.046334Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 140400
+    },
+    "metadata": {
+      "createdAt": "2025-09-08T03:57:40.046334Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00009",
+    "equipmentId": "DEN-001",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-02T03:57:40.046356Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Densitometría Ósea",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-02T17:57:40.046356Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-04T06:57:40.046356Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 4.0
+    },
+    "closure": {
+      "closedAt": "2025-08-05T05:57:40.046356Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 36000
+    },
+    "metadata": {
+      "createdAt": "2025-08-02T03:57:40.046356Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00010",
+    "equipmentId": "ECÓ-001",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-07T03:57:40.046378Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-06-07T15:57:40.046378Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-09T06:57:40.046378Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 3.4
+    },
+    "closure": {
+      "closedAt": "2025-06-11T19:57:40.046378Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 90000
+    },
+    "metadata": {
+      "createdAt": "2025-06-07T03:57:40.046378Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00011",
+    "equipmentId": "ECÓ-002",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-09-20T03:57:40.046402Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-09-20T18:57:40.046402Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-21T21:57:40.046402Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 7.1
+    },
+    "closure": {
+      "closedAt": "2025-09-26T18:57:40.046402Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 61200
+    },
+    "metadata": {
+      "createdAt": "2025-09-20T03:57:40.046402Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00012",
+    "equipmentId": "ECÓ-002",
+    "type": "CORRECTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-01T03:57:40.046425Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "Tubo bajo rendimiento",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-01T20:57:40.046425Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-03T19:57:40.046425Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 5.0
+    },
+    "closure": {
+      "closedAt": "2025-08-07T13:57:40.046425Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 64800
+    },
+    "metadata": {
+      "createdAt": "2025-08-01T03:57:40.046425Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00013",
+    "equipmentId": "ECÓ-002",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-22T03:57:40.046449Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-06-22T16:57:40.046449Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-23T15:57:40.046449Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 5.7
+    },
+    "closure": {
+      "closedAt": "2025-06-24T15:57:40.046449Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 46800
+    },
+    "metadata": {
+      "createdAt": "2025-06-22T03:57:40.046449Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00014",
+    "equipmentId": "ECÓ-002",
+    "type": "INSPECCION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-05-18T03:57:40.046471Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-05-18T05:57:40.046471Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-05-19T05:57:40.046471Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 7.8
+    },
+    "closure": {
+      "closedAt": "2025-05-23T09:57:40.046471Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 82800
+    },
+    "metadata": {
+      "createdAt": "2025-05-18T03:57:40.046471Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00015",
+    "equipmentId": "ECÓ-003",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-18T03:57:40.046494Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-06-18T18:57:40.046494Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-18T20:57:40.046494Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 1.9
+    },
+    "closure": {
+      "closedAt": "2025-06-19T22:57:40.046494Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 151200
+    },
+    "metadata": {
+      "createdAt": "2025-06-18T03:57:40.046494Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00016",
+    "equipmentId": "ECÓ-004",
+    "type": "CORRECTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-09-07T03:57:40.046530Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "Inyector falla",
+      "attachments": [
+        "foto.jpg"
+      ]
+    },
+    "assignment": {
+      "assignedAt": "2025-09-07T11:57:40.046530Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-08T11:57:40.046530Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 4.1
+    },
+    "closure": {
+      "closedAt": "2025-09-13T09:57:40.046530Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 144000
+    },
+    "metadata": {
+      "createdAt": "2025-09-07T03:57:40.046530Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00017",
+    "equipmentId": "ECÓ-004",
+    "type": "CORRECTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-17T03:57:40.046553Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "Inyector falla",
+      "attachments": [
+        "foto.jpg"
+      ]
+    },
+    "assignment": {
+      "assignedAt": "2025-06-17T06:57:40.046553Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-18T10:57:40.046553Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 3.2
+    },
+    "closure": {
+      "closedAt": "2025-06-23T06:57:40.046553Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 61200
+    },
+    "metadata": {
+      "createdAt": "2025-06-17T03:57:40.046553Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00018",
+    "equipmentId": "RAY-001",
+    "type": "PREVENTIVO",
+    "status": "ESPERA_REPUESTO",
+    "creation": {
+      "reportedAt": "2025-10-31T03:57:40.046572Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-11-01T01:57:40.046572Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-11-01T18:57:40.046572Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 4.6
+    },
+    "metadata": {
+      "createdAt": "2025-10-31T03:57:40.046572Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00019",
+    "equipmentId": "RAY-001",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-05-21T03:57:40.046587Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-05-21T14:57:40.046587Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-05-23T07:57:40.046587Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 2.1
+    },
+    "closure": {
+      "closedAt": "2025-05-26T08:57:40.046587Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 21600
+    },
+    "metadata": {
+      "createdAt": "2025-05-21T03:57:40.046587Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00020",
+    "equipmentId": "RAY-001",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-11-01T03:57:40.046604Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-11-01T17:57:40.046604Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-11-02T06:57:40.046604Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 4.2
+    },
+    "closure": {
+      "closedAt": "2025-11-06T02:57:40.046604Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 169200
+    },
+    "metadata": {
+      "createdAt": "2025-11-01T03:57:40.046604Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00021",
+    "equipmentId": "ECÓ-005",
+    "type": "INSPECCION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-07-21T03:57:40.046623Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-07-21T20:57:40.046623Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-07-23T09:57:40.046623Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 4.6
+    },
+    "closure": {
+      "closedAt": "2025-07-25T10:57:40.046623Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 46800
+    },
+    "metadata": {
+      "createdAt": "2025-07-21T03:57:40.046623Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00022",
+    "equipmentId": "ECÓ-006",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-09T03:57:40.046640Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-10T02:57:40.046640Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-10T08:57:40.046640Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 3.3
+    },
+    "closure": {
+      "closedAt": "2025-08-11T06:57:40.046640Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 129600
+    },
+    "metadata": {
+      "createdAt": "2025-08-09T03:57:40.046640Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00023",
+    "equipmentId": "ECÓ-006",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-05-19T03:57:40.046656Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-05-19T19:57:40.046656Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-05-21T15:57:40.046656Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 2.1
+    },
+    "closure": {
+      "closedAt": "2025-05-26T06:57:40.046656Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 75600
+    },
+    "metadata": {
+      "createdAt": "2025-05-19T03:57:40.046656Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00024",
+    "equipmentId": "ECÓ-006",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-11T03:57:40.046674Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-06-11T04:57:40.046674Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-11T07:57:40.046674Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 3.8
+    },
+    "closure": {
+      "closedAt": "2025-06-12T15:57:40.046674Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 126000
+    },
+    "metadata": {
+      "createdAt": "2025-06-11T03:57:40.046674Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00025",
+    "equipmentId": "ECÓ-007",
+    "type": "INSPECCION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-05-29T03:57:40.046693Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-05-30T03:57:40.046693Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-05-30T20:57:40.046693Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 6.4
+    },
+    "closure": {
+      "closedAt": "2025-06-01T15:57:40.046693Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 57600
+    },
+    "metadata": {
+      "createdAt": "2025-05-29T03:57:40.046693Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00026",
+    "equipmentId": "ECÓ-007",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-10-19T03:57:40.046710Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-10-19T07:57:40.046710Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-10-21T04:57:40.046710Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 2.8
+    },
+    "closure": {
+      "closedAt": "2025-10-25T18:57:40.046710Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 57600
+    },
+    "metadata": {
+      "createdAt": "2025-10-19T03:57:40.046710Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00027",
+    "equipmentId": "ECÓ-007",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-11-11T03:57:40.046910Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-11-11T08:57:40.046910Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-11-13T08:57:40.046910Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 4.4
+    },
+    "closure": {
+      "closedAt": "2025-11-13T21:57:40.046910Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 154800
+    },
+    "metadata": {
+      "createdAt": "2025-11-11T03:57:40.046910Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00028",
+    "equipmentId": "RAY-002",
+    "type": "INSPECCION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-13T03:57:40.046933Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-06-13T18:57:40.046933Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-14T10:57:40.046933Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 7.8
+    },
+    "closure": {
+      "closedAt": "2025-06-18T09:57:40.046933Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 129600
+    },
+    "metadata": {
+      "createdAt": "2025-06-13T03:57:40.046933Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00029",
+    "equipmentId": "RAY-002",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-10-01T03:57:40.046951Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-10-02T00:57:40.046951Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-10-02T16:57:40.046951Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 5.7
+    },
+    "closure": {
+      "closedAt": "2025-10-03T18:57:40.046951Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 100800
+    },
+    "metadata": {
+      "createdAt": "2025-10-01T03:57:40.046951Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00030",
+    "equipmentId": "RAY-002",
+    "type": "INSPECCION",
+    "status": "ESPERA_REPUESTO",
+    "creation": {
+      "reportedAt": "2025-09-17T03:57:40.046971Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-09-17T07:57:40.046971Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-17T19:57:40.046971Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 7.3
+    },
+    "metadata": {
+      "createdAt": "2025-09-17T03:57:40.046971Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00031",
+    "equipmentId": "RAY-003",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-09-21T03:57:40.046987Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-09-22T03:57:40.046987Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-23T11:57:40.046987Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 5.7
+    },
+    "closure": {
+      "closedAt": "2025-09-28T02:57:40.046987Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 64800
+    },
+    "metadata": {
+      "createdAt": "2025-09-21T03:57:40.046987Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00032",
+    "equipmentId": "RAY-003",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-10-08T03:57:40.047003Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-10-08T13:57:40.047003Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-10-08T15:57:40.047003Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 6.6
+    },
+    "closure": {
+      "closedAt": "2025-10-12T03:57:40.047003Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 136800
+    },
+    "metadata": {
+      "createdAt": "2025-10-08T03:57:40.047003Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00033",
+    "equipmentId": "RAY-003",
+    "type": "INSPECCION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-11-07T03:57:40.047020Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-11-07T13:57:40.047020Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-11-09T00:57:40.047020Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 6.4
+    },
+    "closure": {
+      "closedAt": "2025-11-09T05:57:40.047020Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 104400
+    },
+    "metadata": {
+      "createdAt": "2025-11-07T03:57:40.047020Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00034",
+    "equipmentId": "RAY-003",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-09-28T03:57:40.047036Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-09-29T01:57:40.047036Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-30T07:57:40.047036Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 1.6
+    },
+    "closure": {
+      "closedAt": "2025-10-02T16:57:40.047036Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 118800
+    },
+    "metadata": {
+      "createdAt": "2025-09-28T03:57:40.047036Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00035",
+    "equipmentId": "ECÓ-008",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-07T03:57:40.047066Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-07T15:57:40.047066Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-09T15:57:40.047066Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 4.9
+    },
+    "closure": {
+      "closedAt": "2025-08-10T17:57:40.047066Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 50400
+    },
+    "metadata": {
+      "createdAt": "2025-08-07T03:57:40.047066Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00036",
+    "equipmentId": "ECÓ-008",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-10-14T03:57:40.047084Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-10-14T20:57:40.047084Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-10-16T16:57:40.047084Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 7.4
+    },
+    "closure": {
+      "closedAt": "2025-10-21T10:57:40.047084Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 46800
+    },
+    "metadata": {
+      "createdAt": "2025-10-14T03:57:40.047084Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00037",
+    "equipmentId": "ECÓ-008",
+    "type": "INSPECCION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-07-12T03:57:40.047101Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-07-12T15:57:40.047101Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-07-13T18:57:40.047101Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 4.7
+    },
+    "closure": {
+      "closedAt": "2025-07-17T09:57:40.047101Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 129600
+    },
+    "metadata": {
+      "createdAt": "2025-07-12T03:57:40.047101Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00038",
+    "equipmentId": "RAY-004",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-06-10T03:57:40.047118Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-06-10T14:57:40.047118Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-06-11T11:57:40.047118Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 2.9
+    },
+    "closure": {
+      "closedAt": "2025-06-15T14:57:40.047118Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 72000
+    },
+    "metadata": {
+      "createdAt": "2025-06-10T03:57:40.047118Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00039",
+    "equipmentId": "RAY-004",
+    "type": "INSPECCION",
+    "status": "EN_PROCESO",
+    "creation": {
+      "reportedAt": "2025-08-10T03:57:40.047139Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-10T13:57:40.047139Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-11T16:57:40.047139Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 2.1
+    },
+    "metadata": {
+      "createdAt": "2025-08-10T03:57:40.047139Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00040",
+    "equipmentId": "RAY-004",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-03T03:57:40.047154Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-03T15:57:40.047154Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-04T21:57:40.047154Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 5.4
+    },
+    "closure": {
+      "closedAt": "2025-08-09T12:57:40.047154Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 154800
+    },
+    "metadata": {
+      "createdAt": "2025-08-03T03:57:40.047154Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00041",
+    "equipmentId": "RAY-004",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-08-05T03:57:40.047170Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-08-05T12:57:40.047170Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-06T19:57:40.047170Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 6.1
+    },
+    "closure": {
+      "closedAt": "2025-08-11T19:57:40.047170Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 68400
+    },
+    "metadata": {
+      "createdAt": "2025-08-05T03:57:40.047170Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00042",
+    "equipmentId": "ECÓ-009",
+    "type": "PREVENTIVO",
+    "status": "ESPERA_REPUESTO",
+    "creation": {
+      "reportedAt": "2025-10-06T03:57:40.047189Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-10-07T02:57:40.047189Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-10-07T22:57:40.047189Z",
+      "repairMethodology": "Limpieza y calibración",
+      "workingTimeHours": 7.0
+    },
+    "metadata": {
+      "createdAt": "2025-10-06T03:57:40.047189Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00043",
+    "equipmentId": "RAY-005",
+    "type": "PREVENTIVO",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-09-02T03:57:40.047205Z",
+      "reportedBy": {
+        "userId": "USR-003",
+        "name": "Téc. Pedro Vargas",
+        "role": "Técnico de Imágenes"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-09-02T23:57:40.047205Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-09-04T22:57:40.047205Z",
+      "repairMethodology": "Actualización firmware",
+      "workingTimeHours": 5.4
+    },
+    "closure": {
+      "closedAt": "2025-09-07T12:57:40.047205Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 79200
+    },
+    "metadata": {
+      "createdAt": "2025-09-02T03:57:40.047205Z",
+      "createdBy": "USR-003"
+    }
+  },
+  {
+    "id": "WO-00044",
+    "equipmentId": "RAY-005",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-10-26T03:57:40.047222Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-10-26T15:57:40.047222Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-10-27T14:57:40.047222Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 2.8
+    },
+    "closure": {
+      "closedAt": "2025-10-29T16:57:40.047222Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 36000
+    },
+    "metadata": {
+      "createdAt": "2025-10-26T03:57:40.047222Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00045",
+    "equipmentId": "RAY-005",
+    "type": "CALIBRACION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-10-14T03:57:40.047239Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "CALIBRACION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-10-15T00:57:40.047239Z",
+      "assignedTo": {
+        "userId": "TEC-003",
+        "name": "Carlos Ruiz",
+        "type": "TERCERO",
+        "company": "Biomedical Solutions SAC"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-10-16T22:57:40.047239Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 3.2
+    },
+    "closure": {
+      "closedAt": "2025-10-20T21:57:40.047239Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 10800
+    },
+    "metadata": {
+      "createdAt": "2025-10-14T03:57:40.047239Z",
+      "createdBy": "USR-002"
+    }
+  },
+  {
+    "id": "WO-00046",
+    "equipmentId": "RAY-005",
+    "type": "CORRECTIVO",
+    "status": "ESPERA_REPUESTO",
+    "creation": {
+      "reportedAt": "2025-08-17T03:57:40.047257Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Radiología Convencional",
+      "description": "Tubo bajo rendimiento",
+      "attachments": [
+        "foto.jpg"
+      ]
+    },
+    "assignment": {
+      "assignedAt": "2025-08-17T08:57:40.047257Z",
+      "assignedTo": {
+        "userId": "TEC-004",
+        "name": "Ana López",
+        "type": "TERCERO",
+        "company": "MedTech Perú"
+      }
+    },
+    "execution": {
+      "startedAt": "2025-08-19T05:57:40.047257Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 2.8
+    },
+    "metadata": {
+      "createdAt": "2025-08-17T03:57:40.047257Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00047",
+    "equipmentId": "ECÓ-010",
+    "type": "PREVENTIVO",
+    "status": "EN_PROCESO",
+    "creation": {
+      "reportedAt": "2025-07-31T03:57:40.047273Z",
+      "reportedBy": {
+        "userId": "USR-001",
+        "name": "Dr. Luis Mendoza",
+        "role": "Médico Radiólogo"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "PREVENTIVO programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-07-31T08:57:40.047273Z",
+      "assignedTo": {
+        "userId": "TEC-001",
+        "name": "Juan Pérez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-07-31T12:57:40.047273Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 5.1
+    },
+    "metadata": {
+      "createdAt": "2025-07-31T03:57:40.047273Z",
+      "createdBy": "USR-001"
+    }
+  },
+  {
+    "id": "WO-00048",
+    "equipmentId": "ECÓ-010",
+    "type": "INSPECCION",
+    "status": "CERRADO",
+    "creation": {
+      "reportedAt": "2025-05-20T03:57:40.047290Z",
+      "reportedBy": {
+        "userId": "USR-002",
+        "name": "Enf. Rosa Díaz",
+        "role": "Enfermera UCI"
+      },
+      "areaIncidente": "Ecografía",
+      "description": "INSPECCION programado",
+      "attachments": []
+    },
+    "assignment": {
+      "assignedAt": "2025-05-20T21:57:40.047290Z",
+      "assignedTo": {
+        "userId": "TEC-002",
+        "name": "María Gómez",
+        "type": "INTERNO",
+        "company": null
+      }
+    },
+    "execution": {
+      "startedAt": "2025-05-22T13:57:40.047290Z",
+      "repairMethodology": "Reemplazo módulo",
+      "workingTimeHours": 7.6
+    },
+    "closure": {
+      "closedAt": "2025-05-25T00:57:40.047290Z",
+      "finalEquipmentStatus": "OPERATIVO",
+      "downTimeSeconds": 129600
+    },
+    "metadata": {
+      "createdAt": "2025-05-20T03:57:40.047290Z",
+      "createdBy": "USR-002"
+    }
+  }
+]
