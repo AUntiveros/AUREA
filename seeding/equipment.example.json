@@ -1,0 +1,80 @@
+[
+  {
+    "id": "TOM-001",
+    "codigoIC": "IC-T001",
+    "nombre": "Tomógrafo Computarizado Multicorte",
+    "tipoEquipo": "Imagenología",
+    "criticidad": "ALTO",
+    "marca": "Siemens",
+    "modelo": "Somatom Definition AS",
+    "localizacion": {
+      "areaClinica": "UPSS Diagnóstico por Imágenes",
+      "sede": "Hospital Santa Isabel",
+      "centroCostoNombre": "Tomografía",
+      "centroCostoCodigo": "IMG-TOMO-01"
+    },
+    "estadoSistema": "OPERATIVO",
+    "cicloVida": {
+      "vidaUtilAnos": 10,
+      "fechaInstalacion": "2018-06-15T00:00:00.000Z",
+      "enGarantia": false,
+      "garantiaFin": "2020-06-14T00:00:00.000Z"
+    },
+    "metadata": {
+      "creadoPor": "SYSTEM_SEED",
+      "creadoEn": "2024-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "MON-045",
+    "codigoIC": "IC-M045",
+    "nombre": "Monitor de Signos Vitales",
+    "tipoEquipo": "Monitoreo",
+    "criticidad": "MEDIO",
+    "marca": "Mindray",
+    "modelo": "uMEC12",
+    "localizacion": {
+      "areaClinica": "Unidad de Cuidados Intensivos (UCI)",
+      "sede": "Hospital Santa Isabel",
+      "centroCostoNombre": "UCI Adultos",
+      "centroCostoCodigo": "CUID-UCI-ADUL"
+    },
+    "estadoSistema": "OPERATIVO",
+    "cicloVida": {
+      "vidaUtilAnos": 7,
+      "fechaInstalacion": "2021-02-20T00:00:00.000Z",
+      "enGarantia": true,
+      "garantiaFin": "2026-02-19T00:00:00.000Z"
+    },
+    "metadata": {
+      "creadoPor": "SYSTEM_SEED",
+      "creadoEn": "2024-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "BOM-112",
+    "codigoIC": "IC-B112",
+    "nombre": "Bomba de Infusión Volumétrica",
+    "tipoEquipo": "Soporte Vital",
+    "criticidad": "BAJO",
+    "marca": "B. Braun",
+    "modelo": "Infusomat Space",
+    "localizacion": {
+      "areaClinica": "Hospitalización - Piso 4",
+      "sede": "Hospital Santa Isabel",
+      "centroCostoNombre": "Hosp. Medicina Interna",
+      "centroCostoCodigo": "HOSP-MED-INT-P4"
+    },
+    "estadoSistema": "EN_MANTENIMIENTO",
+    "cicloVida": {
+      "vidaUtilAnos": 8,
+      "fechaInstalacion": "2019-11-10T00:00:00.000Z",
+      "enGarantia": false,
+      "garantiaFin": "2021-11-09T00:00:00.000Z"
+    },
+    "metadata": {
+      "creadoPor": "SYSTEM_SEED",
+      "creadoEn": "2024-01-01T00:00:00.000Z"
+    }
+  }
+]
